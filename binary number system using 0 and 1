@@ -1,0 +1,28 @@
+#include <stdio.h>
+int main() 
+{ 
+int n,m;
+char ch,dummy; 
+printf("Enter the numbers.\n");
+scanf("%d%d",&n,&m);
+scanf("%c",&dummy);
+printf("Enter the choice.\n");
+scanf("%c",&ch); 
+switch(ch)
+{ 
+case 'A': 
+printf("Addition : %d",n+m);
+break;
+case 'S': 
+printf("Subtraction : %d",n-m); 
+break; 
+case 'M': 
+printf("Multiplication : %d",n*m);
+break;
+default: 
+printf("Invalid input");
+} 
+return 0;
+}
+
+
